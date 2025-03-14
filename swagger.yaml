@@ -1,0 +1,110 @@
+openapi: 3.0.0
+info:
+  title: Image Processing API
+  description: API for processing images from a CSV file, compressing, storing, and generating output CSV.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:5000/api
+    description: Local Development Server
+
+paths:
+  /upload:
+    post:
+      summary: Upload a CSV file for processing
+      description: Accepts a CSV file, validates formatting, and returns a unique request ID.
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        "200":
+          description: File uploaded successfully, processing started.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UploadResponse"
+        "400":
+          description: Invalid CSV format
+        "500":
+          description: Internal Server Error
+
+  /status/{requestId}:
+    get:
+      summary: Get processing status
+      description: Allows users to check the processing status of a given request ID.
+      parameters:
+        - name: requestId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Request status retrieved successfully.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StatusResponse"
+        "404":
+          description: Request ID not found
+        "500":
+          description: Internal Server Error
+
+  /csv/{requestId}:
+    get:
+      summary: Download processed CSV
+      description: Provides the processed CSV file for a given request ID.
+      parameters:
+        - name: requestId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Processed CSV file available for download.
+          content:
+            text/csv:
+              schema:
+                type: string
+                format: binary
+        "404":
+          description: CSV file not found
+        "500":
+          description: Internal Server Error
+
+components:
+  schemas:
+    UploadResponse:
+      type: object
+      properties:
+        requestId:
+          type: string
+          example: "123e4567-e89b-12d3-a456-426614174000"
+        message:
+          type: string
+          example: "File uploaded successfully. Processing started."
+
+    StatusResponse:
+      type: object
+      properties:
+        requestId:
+          type: string
+          example: "123e4567-e89b-12d3-a456-426614174000"
+        status:
+          type: string
+          enum: ["pending", "processing", "completed"]
+          example: "processing"
+        totalImages:
+          type: integer
+          example: 10
+        processedImages:
+          type: integer
+          example: 4
