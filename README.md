@@ -1,15 +1,14 @@
-```md
 # 📌 Image Processing System  
 🚀 **Efficiently Process Image Data from CSV Files**  
 
 ## 📖 Overview  
 This system asynchronously processes images from a CSV file. It:  
-✔️ Accepts a CSV file with product details & image URLs  
-✔️ Validates CSV formatting  
-✔️ Compresses images by 50%  
-✔️ Uploads processed images to Cloudinary  
-✔️ Stores product & image details in MongoDB  
-✔️ Provides APIs to check processing status & download output CSV  
+- ✔️ Accepts a CSV file with product details & image URLs  
+- ✔️ Validates CSV formatting  
+- ✔️ Compresses images by 50%  
+- ✔️ Uploads processed images to Cloudinary  
+- ✔️ Stores product & image details in MongoDB  
+- ✔️ Provides APIs to check processing status & download output CSV  
 
 ---
 
@@ -30,11 +29,11 @@ This system asynchronously processes images from a CSV file. It:
 ---
 
 ## 🔥 Features  
-✔️ **Upload CSV** → Submit CSV with product & image URLs  
-✔️ **Process Images** → Asynchronous image compression & upload  
-✔️ **Track Status** → Query processing status using `requestId`  
-✔️ **Download CSV** → Get processed images as a CSV file  
-✔️ **Webhook Support** → Notify users when processing is done  
+- ✔️ **Upload CSV** → Submit CSV with product & image URLs  
+- ✔️ **Process Images** → Asynchronous image compression & upload  
+- ✔️ **Track Status** → Query processing status using `requestId`  
+- ✔️ **Download CSV** → Get processed images as a CSV file  
+- ✔️ **Webhook Support** → Notify users when processing is done  
 
 ---
 
@@ -44,7 +43,7 @@ This system asynchronously processes images from a CSV file. It:
 ```sh
 git clone https://github.com/omkar193/pix-stream.git
 cd pix-stream
-```
+
 
 ### 2️⃣ Install Dependencies  
 ```sh
