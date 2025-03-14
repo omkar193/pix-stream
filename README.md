@@ -1,5 +1,8 @@
+Here is the final **README.md** file content. Just copy and paste it into your **README.md** file in your project directory.  
+
 ---
 
+```md
 # 📌 Image Processing System  
 🚀 **Efficiently Process Image Data from CSV Files**  
 
@@ -127,6 +130,11 @@ npm start
 
 ---
 
+## 📌 **Postman Collection**  
+🔗 **Public Link:** [Postman Collection](https://www.postman.com/maintenance-cosmonaut-16756371/workspace/my-workspace/collection/41544662-45d20e2e-a139-4a5f-865c-9c93b901363d)  
+
+---
+
 ## 🛠️ Project Structure  
 ```yaml
 📂 pix-stream  
@@ -139,8 +147,10 @@ npm start
 │   ├── 📂 models       # Mongoose Schemas  
 │   ├── 📂 workers      # BullMQ Worker for Processing  
 │   ├── 📜 server.js    # Main Entry Point  
-│── 📂 diagrams         # System Design & API Flow  
-│── 📂 csv_outputs      # Processed CSV Files  
+│── 📂 docs            # LLD, Workers Documentation, API Docs  
+│── 📂 diagrams        # System Design, API Flow, DB Schema  
+│── 📂 csv_outputs     # Processed CSV Files  
+│── 📂 postman_collection # Public Postman Collection  
 ```
 
 ---
@@ -163,5 +173,11 @@ git push origin master
    - **Start Command:** `node src/server.js`  
 4. **Add Environment Variables** in Render Dashboard  
 5. **Click Deploy!**  
+
+---
+
+## 📌 **Supporting Documents (LLD, API Docs, Diagrams, etc.)**  
+📂 **Google Drive Folder:**  
+🔗 **[All Supporting Docs](https://drive.google.com/drive/folders/1LjStzDNHXKoTnVZsAxXlPscxH-QG10pf?usp=sharing)**  
 
 ---
