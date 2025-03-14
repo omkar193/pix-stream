@@ -1,10 +1,12 @@
+Yes! Since you've deployed the project on **Render**, we should update the **README.md** to reflect the live API URL and deployment details. Here's the **final version** with all the necessary updates:  
+
 ---
 
 # 📌 Image Processing System  
-🚀 Process CSV-Based Image Data Efficiently  
+🚀 **Efficiently Process Image Data from CSV Files**  
 
 ## 📖 Overview  
-This project processes image data from CSV files asynchronously. It:  
+This system asynchronously processes images from a CSV file. It:  
 ✔️ Accepts a CSV file with product details & image URLs  
 ✔️ Validates CSV formatting  
 ✔️ Compresses images by 50%  
@@ -12,12 +14,23 @@ This project processes image data from CSV files asynchronously. It:
 ✔️ Stores product & image details in MongoDB  
 ✔️ Provides APIs to check processing status & download output CSV  
 
+---
+
+## 🌍 **Live Deployment**  
+✅ **Base URL:** [https://pix-stream.onrender.com](https://pix-stream.onrender.com)  
+✅ **Swagger API Docs:** [https://pix-stream.onrender.com/api-docs](https://pix-stream.onrender.com/api-docs)  
+
+---
+
 ## 🛠️ Tech Stack  
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB (Mongoose)  
 - **Queue Processing:** BullMQ + Redis  
 - **Cloud Storage:** Cloudinary  
 - **API Documentation:** Swagger (OpenAPI 3.0)  
+- **Deployment:** Render  
+
+---
 
 ## 🔥 Features  
 ✔️ **Upload CSV** → Submit CSV with product & image URLs  
@@ -28,7 +41,7 @@ This project processes image data from CSV files asynchronously. It:
 
 ---
 
-## 🔧 Installation & Setup  
+## 🔧 Installation & Local Setup  
 
 ### 1️⃣ Clone the Repository  
 ```sh
@@ -76,8 +89,7 @@ npm start
 ---
 
 ## 📌 API Documentation  
-🌍 **Live API URL:** [https://pix-stream.onrender.com](https://pix-stream.onrender.com)  
-📑 **Swagger UI:** [https://pix-stream.onrender.com/api-docs](https://pix-stream.onrender.com/api-docs)  
+**Swagger UI:** [https://pix-stream.onrender.com/api-docs](https://pix-stream.onrender.com/api-docs)  
 
 ### 1️⃣ Upload CSV File  
 - **Endpoint:** `POST /api/upload`  
@@ -135,19 +147,24 @@ npm start
 
 ---
 
-## 🚀 Deployment  
+## 🚀 Deployment on Render  
+This project is deployed on **Render**.  
 
-### 1️⃣ Push to GitHub  
+### 1️⃣ **Push to GitHub**  
 ```sh
 git add .
-git commit -m "Updated README with live API URL & Swagger UI"
+git commit -m "Updated README with deployment details"
 git push origin master
 ```
 
-### 2️⃣ Deploy on Render / Railway / AWS / Vercel / DigitalOcean  
-- **Use MongoDB Atlas** for database  
-- **Use Upstash Redis** for BullMQ queues  
-- **Add `.env` variables** in the hosting environment  
+### 2️⃣ **Deploy on Render**  
+1. **Go to** [Render](https://dashboard.render.com/)  
+2. **Click** `New Web Service` → `Connect GitHub Repository`  
+3. **Set Build & Start Commands**  
+   - **Build Command:** `npm install`  
+   - **Start Command:** `node src/server.js`  
+4. **Add Environment Variables** in Render Dashboard  
+5. **Click Deploy!**  
 
 ---
 
@@ -156,18 +173,18 @@ git push origin master
 ✅ Validate `requestId` tracking for async processing  
 ✅ Optimize error handling & logging  
 
-🚀 **Project is ready for submission!**  
+🚀 **Project is now ready for final submission!**  
 
 ---
 
 ### **🔹 What to do now?**
-1. **Copy & Replace** this in your `README.md` file.
+1. **Copy & Replace** this in your `README.md` file.  
 2. **Commit & Push** the updated file:  
    ```sh
    git add README.md
-   git commit -m "Finalized README before submission"
+   git commit -m "Finalized README with live deployment"
    git push origin master
    ```
-3. **Submit the GitHub link** in your assignment form.
+3. **Submit your GitHub repo & live API link** in your assignment form.
 
-Let me know if you need any last-minute changes! 🚀🔥
+🎉 **You're all set! Let me know if anything else is needed.** 🚀🔥
