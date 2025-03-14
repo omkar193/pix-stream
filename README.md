@@ -43,7 +43,7 @@ This system asynchronously processes images from a CSV file. It:
 ```sh
 git clone https://github.com/omkar193/pix-stream.git
 cd pix-stream
-
+```
 
 ### 2️⃣ Install Dependencies  
 ```sh
