@@ -1,5 +1,3 @@
-Here is the final **README.md** file content. Just copy and paste it into your **README.md** file in your project directory.  
-
 ---
 
 ```md
