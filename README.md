@@ -1,5 +1,3 @@
----
-
 ```md
 # 📌 Image Processing System  
 🚀 **Efficiently Process Image Data from CSV Files**  
