@@ -1,5 +1,3 @@
-Yes! Since you've deployed the project on **Render**, we should update the **README.md** to reflect the live API URL and deployment details. Here's the **final version** with all the necessary updates:  
-
 ---
 
 # 📌 Image Processing System  
@@ -167,24 +165,3 @@ git push origin master
 5. **Click Deploy!**  
 
 ---
-
-## 🎯 Next Steps  
-✅ Ensure all API endpoints work correctly  
-✅ Validate `requestId` tracking for async processing  
-✅ Optimize error handling & logging  
-
-🚀 **Project is now ready for final submission!**  
-
----
-
-### **🔹 What to do now?**
-1. **Copy & Replace** this in your `README.md` file.  
-2. **Commit & Push** the updated file:  
-   ```sh
-   git add README.md
-   git commit -m "Finalized README with live deployment"
-   git push origin master
-   ```
-3. **Submit your GitHub repo & live API link** in your assignment form.
-
-🎉 **You're all set! Let me know if anything else is needed.** 🚀🔥
