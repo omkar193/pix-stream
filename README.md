@@ -93,8 +93,8 @@ npm start
 - **Response:**  
 ```json
 {
-    "requestId": "abc-123",
-    "message": "Processing started."
+    "requestId": "1acde6c9-9f17-4443-a423-935e9bd91134",
+    "processedProducts": 2
 }
 ```
 
@@ -103,9 +103,13 @@ npm start
 - **Response:**  
 ```json
 {
+    "_id": "1acde6c9-9f17-4443-a423-935e9bd91134",
     "status": "completed",
-    "totalImages": 5,
-    "processedImages": 5
+    "totalImages": 4,
+    "processedImages": 4,
+    "createdAt": "2025-03-14T14:02:15.457Z",
+    "updatedAt": "2025-03-14T14:02:25.822Z",
+    "__v": 0
 }
 ```
 
